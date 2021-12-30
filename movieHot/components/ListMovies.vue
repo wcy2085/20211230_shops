@@ -1,0 +1,96 @@
+<template>
+  <div>
+      <Movie v-for='(movie,index) in movies' :key='index' :movie='movie' :index='index'></Movie>  
+  </div>
+</template>
+
+<script>
+ import Movie from  './Movie.vue'
+export default {
+    name:'ListMovies',
+    data(){
+        return{
+            movies:[
+                {number:1,
+                 src:require('../asserts/boxoffice/01.jpg'),
+                 name:'八佰',
+                 starting:'暂无信息',
+                 time:'2020-08-21',
+                 boxoffice:'310000.00'
+                 },
+                   {number:2,
+                 src:require('../asserts/boxoffice/02.jpg'),
+                 name:'夺冠',
+                 starting:'暂无信息',
+                 time:'2020-09-25',
+                 boxoffice:'83569.00'
+                 },
+                   {number:3,
+                 src:require('../asserts/boxoffice/03.jpg'),
+                 name:'除暴',
+                 starting:'暂无信息',
+                 time:'2020-11-27',
+                 boxoffice:'30900.00'
+                 },
+                   {number:4,
+                 src:require('../asserts/boxoffice/04.jpg'),
+                 name:'我和我的家乡',
+                 starting:'暂无信息',
+                 time:'2020-10-01',
+                 boxoffice:'280000.00'
+                 },
+                   {number:5,
+                 src:require('../asserts/boxoffice/05.jpg'),
+                 name:'疯狂原始人',
+                 starting:'暂无信息',
+                 time:'2020-11-27',
+                 boxoffice:'10000.00'
+                 },
+                   {number:6,
+                 src:require('../asserts/boxoffice/06.jpg'),
+                 name:'地狱男爵',
+                 starting:'暂无信息',
+                 time:'2020-08-21',
+                 boxoffice:'8591.00'
+                 },
+                   {number:7,
+                 src:require('../asserts/boxoffice/07.jpg'),
+                 name:'汪汪队立大功',
+                 starting:'暂无信息',
+                 time:'2020-11-13',
+                 boxoffice:'7230.00'
+                 },
+                   {number:8,
+                 src:require('../asserts/boxoffice/08.jpg'),
+                 name:'热血合唱团',
+                 starting:'暂无信息',
+                 time:'2020-08-21',
+                 boxoffice:'6428.00'
+                 },
+                   {number:9,
+                 src:require('../asserts/boxoffice/09.jpg'),
+                 name:'末日逃生',
+                 starting:'暂无信息',
+                 time:'2020-08-21',
+                 boxoffice:'3198.00'
+                 },
+                   {number:10,
+                 src:require('../asserts/boxoffice/10.jpg'),
+                 name:'野性的呼唤',
+                 starting:'暂无信息',
+                 time:'2020-11-13',
+                 boxoffice:'3123.00'
+                 },
+            ]
+
+        }
+    },
+    components:{
+        Movie
+    }
+}
+</script>
+
+<style>
+
+</style>
